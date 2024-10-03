@@ -1,0 +1,57 @@
+{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "PURCHASE",
+          "value": "PURCHASE"
+        },
+        {
+          "label": "CASH",
+          "value": "CASH"
+        },
+        {
+          "label": "BONUS",
+          "value": "BONUS"
+        }
+      ],
+      "label": "Select Goal",
+      "type": "select",
+      "layout": {
+        "row": "Row_034xono",
+        "columns": null
+      },
+      "id": "Field_00op806",
+      "key": "debit_goal"
+    },
+    {
+      "values": [
+        {
+          "label": "LOW PRICE",
+          "value": "LOW_PRICE"
+        },
+        {
+          "label": "INTEREST BALANCE",
+          "value": "INTEREST_BALANCE"
+        }
+      ],
+      "label": "Select Bonus",
+      "type": "select",
+      "layout": {
+        "row": "Row_003efug",
+        "columns": null
+      },
+      "id": "Field_11dleg8",
+      "key": "debit_bonus"
+    }
+  ],
+  "type": "default",
+  "id": "debit_preference",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.27.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 16
+}

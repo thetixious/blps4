@@ -1,0 +1,34 @@
+{
+  "components": [
+    {
+      "label": "Your cards!",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_15sfm77",
+        "columns": null
+      },
+      "id": "Field_0ugmzoc",
+      "key": "list_of_cards",
+      "defaultValue": "no matching cards"
+    },
+    {
+      "action": "submit",
+      "label": "ok",
+      "type": "button",
+      "layout": {
+        "row": "Row_1jvz8ai",
+        "columns": null
+      },
+      "id": "Field_031ul15"
+    }
+  ],
+  "type": "default",
+  "id": "show_cards",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.27.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 16
+}

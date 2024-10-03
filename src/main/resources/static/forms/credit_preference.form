@@ -1,0 +1,70 @@
+{
+  "components": [
+    {
+      "values": [
+        {
+          "label": "PURCHASE",
+          "value": "PURCHASE"
+        },
+        {
+          "label": "CASH",
+          "value": "CASH"
+        },
+        {
+          "label": "BONUS",
+          "value": "BONUS"
+        }
+      ],
+      "label": "Select goal",
+      "type": "select",
+      "layout": {
+        "row": "Row_1ec48i4",
+        "columns": null
+      },
+      "id": "Field_1d0im3m",
+      "key": "credit_goal",
+      "defaultValue": "CASH"
+    },
+    {
+      "values": [
+        {
+          "label": "LOW PRICE",
+          "value": "LOW_PRICE"
+        },
+        {
+          "label": "INTEREST BALANCE",
+          "value": "INTEREST_BALANCE"
+        }
+      ],
+      "label": "Select bonus",
+      "type": "select",
+      "layout": {
+        "row": "Row_00s7fxq",
+        "columns": null
+      },
+      "id": "Field_13o0mdf",
+      "key": "credit_bonus",
+      "defaultValue": "LOW_PRICE"
+    },
+    {
+      "label": "Credit limit",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1plwss1",
+        "columns": null
+      },
+      "id": "Field_0jmaopi",
+      "key": "credit_limit",
+      "defaultValue": "10000"
+    }
+  ],
+  "type": "default",
+  "id": "credit_preference",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.27.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 16
+}

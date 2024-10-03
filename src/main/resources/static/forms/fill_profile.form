@@ -1,0 +1,63 @@
+{
+  "components": [
+    {
+      "label": "Enter name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1t55qtw",
+        "columns": null
+      },
+      "id": "Field_1qyakis",
+      "key": "name"
+    },
+    {
+      "label": "Enter surname",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_05nvddn",
+        "columns": null
+      },
+      "id": "Field_08qoxlv",
+      "key": "surname"
+    },
+    {
+      "label": "Enter passport",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_06x5lcj",
+        "columns": null
+      },
+      "id": "Field_1fa4i7r",
+      "key": "passport"
+    },
+    {
+      "label": "Enter salary",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1x2bk9o",
+        "columns": null
+      },
+      "id": "Field_1cbb26x",
+      "key": "salary"
+    },
+    {
+      "action": "submit",
+      "label": "Submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_0tp414h",
+        "columns": null
+      },
+      "id": "Field_0znia4q"
+    }
+  ],
+  "type": "default",
+  "id": "fill_profile",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.27.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 16
+}

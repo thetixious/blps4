@@ -1,0 +1,33 @@
+{
+  "components": [
+    {
+      "label": "Initialy approved cards",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_1qkvms2",
+        "columns": null
+      },
+      "id": "Field_01pheqy",
+      "key": "initial_approved"
+    },
+    {
+      "label": "Select cards id",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1ggungu",
+        "columns": null
+      },
+      "id": "Field_0b0sxv1",
+      "key": "selected_cards"
+    }
+  ],
+  "type": "default",
+  "id": "select_credit_card",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.27.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 16
+}

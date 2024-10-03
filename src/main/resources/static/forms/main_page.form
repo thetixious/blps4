@@ -1,0 +1,62 @@
+{
+  "components": [
+    {
+      "text": "# Main Page",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_1kwfrl1",
+        "columns": null
+      },
+      "id": "Field_136ox0a"
+    },
+    {
+      "values": [
+        {
+          "label": "Debit card",
+          "value": "to_debit_part"
+        },
+        {
+          "label": "Credit card",
+          "value": "to_credit_part"
+        },
+        {
+          "label": "Exit",
+          "value": "exit"
+        },
+        {
+          "label": "Fill profile",
+          "value": "to_fill_profile"
+        }
+      ],
+      "label": "Select Action",
+      "type": "select",
+      "layout": {
+        "row": "Row_03nsy98",
+        "columns": null
+      },
+      "id": "Field_0cjs7sg",
+      "key": "main_page_selection",
+      "defaultValue": "to_debit_part"
+    },
+    {
+      "action": "submit",
+      "label": "Submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_181a7fk",
+        "columns": null
+      },
+      "id": "Field_1lnrcpo"
+    }
+  ],
+  "type": "default",
+  "id": "Form_0xkg3kr",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.27.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.21.0",
+  "schemaVersion": 16
+}
