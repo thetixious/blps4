@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1xqibv7" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.27.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.21.0">
+  <bpmn:collaboration id="Collaboration_1v4jl6o">
+    <bpmn:participant id="Participant_0xhx04m" name="timer task" processRef="Process_0fkwunt" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_0fkwunt" isExecutable="true" camunda:historyTimeToLive="180">
+    <bpmn:startEvent id="Event_054qpd3">
+      <bpmn:outgoing>Flow_1xsb3za</bpmn:outgoing>
+      <bpmn:timerEventDefinition id="TimerEventDefinition_06boqju">
+        <bpmn:timeCycle xsi:type="bpmn:tFormalExpression">0 59 23 ? * MON-FRI</bpmn:timeCycle>
+      </bpmn:timerEventDefinition>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="Event_0uqprij">
+      <bpmn:incoming>Flow_0056d90</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:serviceTask id="Activity_0jrblba" name="Cleaning credit offer" camunda:delegateExpression="${timerTask}">
+      <bpmn:incoming>Flow_1xsb3za</bpmn:incoming>
+      <bpmn:outgoing>Flow_0056d90</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_1xsb3za" sourceRef="Event_054qpd3" targetRef="Activity_0jrblba" />
+    <bpmn:sequenceFlow id="Flow_0056d90" sourceRef="Activity_0jrblba" targetRef="Event_0uqprij" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_1v4jl6o">
+      <bpmndi:BPMNShape id="Participant_0xhx04m_di" bpmnElement="Participant_0xhx04m" isHorizontal="true">
+        <dc:Bounds x="160" y="70" width="600" height="250" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_054qpd3_di" bpmnElement="Event_054qpd3">
+        <dc:Bounds x="282" y="172" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0uqprij_di" bpmnElement="Event_0uqprij">
+        <dc:Bounds x="533" y="172" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1kur39v_di" bpmnElement="Activity_0jrblba">
+        <dc:Bounds x="360" y="140" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1xsb3za_di" bpmnElement="Flow_1xsb3za">
+        <di:waypoint x="318" y="190" />
+        <di:waypoint x="339" y="190" />
+        <di:waypoint x="339" y="180" />
+        <di:waypoint x="360" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0056d90_di" bpmnElement="Flow_0056d90">
+        <di:waypoint x="460" y="180" />
+        <di:waypoint x="497" y="180" />
+        <di:waypoint x="497" y="190" />
+        <di:waypoint x="533" y="190" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

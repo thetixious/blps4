@@ -15,9 +15,6 @@
         <bpmn:flowNodeRef>Event_0jle8qd</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Event_15ihwve</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Event_02o9mnk</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Activity_0jrblba</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Event_054qpd3</bpmn:flowNodeRef>
-        <bpmn:flowNodeRef>Event_0uqprij</bpmn:flowNodeRef>
       </bpmn:lane>
       <bpmn:lane id="Lane_0cuty70" name="Client">
         <bpmn:extensionElements />
@@ -131,7 +128,7 @@
     <bpmn:endEvent id="Event_158ay4k">
       <bpmn:incoming>Flow_1hj3ypz</bpmn:incoming>
     </bpmn:endEvent>
-    <bpmn:userTask id="Activity_0wb4qu3" name="Show debit cards" camunda:formKey="camunda-forms:/forms/show_cards.form">
+    <bpmn:userTask id="Activity_0wb4qu3" name="Show cards" camunda:formKey="camunda-forms:/forms/show_cards.form">
       <bpmn:incoming>Flow_0e3gq5u</bpmn:incoming>
       <bpmn:incoming>Flow_1sixnqg</bpmn:incoming>
       <bpmn:outgoing>Flow_1hj3ypz</bpmn:outgoing>
@@ -208,21 +205,6 @@
       <bpmn:outgoing>Flow_1a8w99q</bpmn:outgoing>
       <bpmn:errorEventDefinition id="ErrorEventDefinition_05kfdpt" errorRef="Error_1rz2qpw" />
     </bpmn:boundaryEvent>
-    <bpmn:serviceTask id="Activity_0jrblba" name="Cleaning credit offer" camunda:delegateExpression="${timerTask}">
-      <bpmn:incoming>Flow_0i1qw0l</bpmn:incoming>
-      <bpmn:outgoing>Flow_0rtrk9r</bpmn:outgoing>
-    </bpmn:serviceTask>
-    <bpmn:startEvent id="Event_054qpd3">
-      <bpmn:outgoing>Flow_0i1qw0l</bpmn:outgoing>
-      <bpmn:timerEventDefinition id="TimerEventDefinition_06boqju">
-        <bpmn:timeCycle xsi:type="bpmn:tFormalExpression">0 59 23 * * *</bpmn:timeCycle>
-      </bpmn:timerEventDefinition>
-    </bpmn:startEvent>
-    <bpmn:sequenceFlow id="Flow_0i1qw0l" sourceRef="Event_054qpd3" targetRef="Activity_0jrblba" />
-    <bpmn:endEvent id="Event_0uqprij">
-      <bpmn:incoming>Flow_0rtrk9r</bpmn:incoming>
-    </bpmn:endEvent>
-    <bpmn:sequenceFlow id="Flow_0rtrk9r" sourceRef="Activity_0jrblba" targetRef="Event_0uqprij" />
   </bpmn:process>
   <bpmn:message id="Message_2nq5but" name="ApprovalResult" />
   <bpmn:signal id="Signal_1fsvnpb" name="Signal_1" />
@@ -322,16 +304,6 @@
       <bpmndi:BPMNShape id="Activity_0gferjr_di" bpmnElement="Activity_1viol7d">
         <dc:Bounds x="623" y="373" width="100" height="80" />
         <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_1kur39v_di" bpmnElement="Activity_0jrblba">
-        <dc:Bounds x="330" y="730" width="100" height="80" />
-        <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_054qpd3_di" bpmnElement="Event_054qpd3">
-        <dc:Bounds x="241" y="752" width="36" height="36" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Event_0uqprij_di" bpmnElement="Event_0uqprij">
-        <dc:Bounds x="492" y="752" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_15ihwve_di" bpmnElement="Event_15ihwve">
         <dc:Bounds x="1172" y="485" width="36" height="36" />
@@ -478,14 +450,6 @@
         <di:waypoint x="1360" y="503" />
         <di:waypoint x="1360" y="120" />
         <di:waypoint x="832" y="120" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_0i1qw0l_di" bpmnElement="Flow_0i1qw0l">
-        <di:waypoint x="277" y="770" />
-        <di:waypoint x="330" y="770" />
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge id="Flow_0rtrk9r_di" bpmnElement="Flow_0rtrk9r">
-        <di:waypoint x="430" y="770" />
-        <di:waypoint x="492" y="770" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="DataInputAssociation_1vmd034_di" bpmnElement="DataInputAssociation_1vmd034">
         <di:waypoint x="1223" y="638" />

@@ -240,4 +240,28 @@
         <is_fill>true</is_fill>
         <role>ROLE_USER</role>
     </user>
+    <user>
+        <id>34</id>
+        <username>alesha</username>
+        <name>alesha</name>
+        <surname>popovich</surname>
+        <email>alesha</email>
+        <password>$2a$10$0Qp42pmvxQW6SwT6QihNI.jH74qzKzb02/YdeMvtWEiGIUIEEQble</password>
+        <passport>12345</passport>
+        <salary>32141.0</salary>
+        <is_fill>true</is_fill>
+        <role>ROLE_USER</role>
+    </user>
+    <user>
+        <id>35</id>
+        <username>alesha</username>
+        <name>alesha</name>
+        <surname>popovich</surname>
+        <email>alesha1</email>
+        <password>$2a$10$0Qp42pmvxQW6SwT6QihNI.jH74qzKzb02/YdeMvtWEiGIUIEEQble</password>
+        <passport>123421</passport>
+        <salary>423341.0</salary>
+        <is_fill>true</is_fill>
+        <role>ROLE_USER</role>
+    </user>
 </users>
