@@ -264,4 +264,12 @@
         <is_fill>true</is_fill>
         <role>ROLE_USER</role>
     </user>
+    <user>
+        <id>1</id>
+        <username>exmp</username>
+        <email>exmp@gmail.com</email>
+        <password>$2a$10$0Qp42pmvxQW6SwT6QihNI.jH74qzKzb02/YdeMvtWEiGIUIEEQble</password>
+        <is_fill>false</is_fill>
+        <role>ROLE_USER</role>
+    </user>
 </users>

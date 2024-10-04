@@ -31,22 +31,29 @@ dependencies {
     implementation 'org.mapstruct:mapstruct:1.4.2.Final'
     implementation 'org.springframework.boot:spring-boot-starter-security'
     testImplementation 'org.springframework.security:spring-security-test'
-
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'org.postgresql:postgresql'
     annotationProcessor 'org.projectlombok:lombok'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
-
+    implementation 'javax.xml.bind:jaxb-api:2.4.0-b180830.0359'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.kafka:spring-kafka-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
 }
+
 compileJava {
     options.compilerArgs = [
             '-Amapstruct.defaultComponentModel=spring'
     ]
 }
+bootJar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    archiveFileName = 'my-spring-boot-app.jar' // Имя JAR-файла
+    launchScript()
+}
+
+
 tasks.named('test') {
     useJUnitPlatform()
 }
