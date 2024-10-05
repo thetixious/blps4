@@ -11,7 +11,7 @@
     <user>
         <id>2</id>
         <username>admin</username>
-        <email>admin@gmail.com</email>
+        <email>admin</email>
         <password>$2a$10$RWuCv9mgaShIUQKZPoQtfetb2Yp1BTYnIauuyLCJGypMlfRdxvOoG</password>
         <is_fill>false</is_fill>
         <role>ROLE_ADMIN</role>
@@ -265,10 +265,18 @@
         <role>ROLE_USER</role>
     </user>
     <user>
-        <id>1</id>
-        <username>exmp</username>
-        <email>exmp@gmail.com</email>
+        <id>36</id>
+        <username>vova</username>
+        <email>vova</email>
         <password>$2a$10$0Qp42pmvxQW6SwT6QihNI.jH74qzKzb02/YdeMvtWEiGIUIEEQble</password>
+        <is_fill>false</is_fill>
+        <role>ROLE_USER</role>
+    </user>
+    <user>
+        <id>37</id>
+        <username>pipa</username>
+        <email>pupa@email.com</email>
+        <password>$2a$10$0SnnrzPvKd5dG9465qcxwuvJT.7RJH49uJGRxW5bFaMCui/XxXUNW</password>
         <is_fill>false</is_fill>
         <role>ROLE_USER</role>
     </user>

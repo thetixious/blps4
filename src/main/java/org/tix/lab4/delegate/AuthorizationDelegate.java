@@ -34,7 +34,7 @@ public class AuthorizationDelegate implements JavaDelegate {
         if ((user != null) && (encoder.matches(password,user.getPassword())))
             userExist = true;
 
-        if ((user.getUsername() == "admin") && (user.getRole() == Role.ROLE_ADMIN)){
+        if (user.getRole() == Role.ROLE_ADMIN){
             isAdmin = true;
         }
         delegateExecution.setVariable("user_exist",userExist);
